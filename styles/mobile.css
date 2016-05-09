@@ -1,0 +1,196 @@
+@media only screen and (max-width: 668px) {
+    
+        /*-------------------------------slidemenut*/
+    
+    #mobiletoggle {
+   display: flex;
+   min-height: 50%;
+}
+
+input[type=checkbox] {
+   position: absolute;
+   opacity: 0;
+}
+label {
+   position: absolute;
+   top: 10px;
+   left: 30px;
+   z-index: 1;
+   display: block;
+   font-size:3em;
+   color: #dd1500;
+   cursor: pointer;
+   transform: translate3d(0, 0, 0);
+   transition: transform .6s;
+}
+
+input[type=checkbox]:checked ~ label {
+   transform: translate3d(150px, 0, 0) rotate(90deg);
+}
+.content {
+   width:50%;
+   padding: 40px;
+   background: blue;
+   transform: translate3d(0, 0, 0);
+   transition: transform .4s;
+}
+
+input[type=checkbox]:checked ~ .slide-menu {
+   transform: translate3d(-40px, 0, 0);
+}
+input[type=checkbox]:checked ~ .slide-menu .menu li {
+   width: 100%;
+}
+
+.slide-menu {
+   display: block;
+   transform: translate3d(-200px, 0, 0);
+   position: fixed;
+   width: 10px;
+   background: transparent;
+   color: #AA1000;
+   left: 0;
+   height: 100%;
+   transition: all .4s;
+   z-index: 999999999;
+}
+
+.menu {
+   list-style-type: none;
+   color:transparent;
+   padding: 0;
+   margin: 0;
+   width:25%;
+   height:10%;
+}
+.menu li a {
+   display: block;
+   width:100px;
+   text-decoration: none;
+   text-align:center;
+   color: white;
+   font-size: 16px;
+padding: 20px;
+height: 20px;
+   background: #AA1000;
+}
+.menu a:hover {
+   background: #D01A07;
+}
+
+ #oxanayoxana {display: none;}
+ 
+    /*-------------------------------maincontent*/
+    .container {
+     display: flex;
+     flex-flow: column;
+     min-height: 100vh;
+     overflow: auto;
+}
+
+.firstcontent {
+     flex: 1;
+     padding: 0;
+}
+
+.firstcontent h2 { 
+   position: absolute; 
+   top: 15%; 
+   left: 10%; 
+   width: 45%; 
+font-family: 'Lato', sans-serif;
+font-size: 20px;
+z-index: 1;
+}
+
+#me {
+     content:url("../media/backgroundtop.jpg");
+     display: inline-block;
+     position: relative;
+     max-width:100%;
+     width: 100%;
+     height: auto;
+     padding-top: 2%;
+     margin: 0 auto;
+}
+
+.firstcontent h2 { transition: all .2s ease-in-out; }
+.firstcontent h2:hover { transform: scale(1.1); }
+
+.secondcontent {
+     flex: 1;
+     padding: 0; 
+     margin: 0 auto;
+     height: auto;
+     background-color: white;
+     background-size: cover;
+     max-width: 100%;
+     width: 100%;
+       list-style: none;
+  display: flex;
+  flex-flow:row;
+}
+
+.hidden h2 {
+display: inline-block;
+padding-left: 10%;
+width: 100%; 
+font-family: 'Lato', sans-serif;
+font-size: 20px;
+z-index: 1;
+    
+}
+
+
+.pivorak {
+     content:url("../media/pivorak.svg");
+     display: inline-block;
+     position: relative;
+     max-width:50%;
+     width: 50%;
+     height: auto;
+     margin: 0 auto;
+     z-index: 1;
+}
+
+.innocodelogo {
+     content:url("../media/innocodelogo.svg");
+     display: inline-block;
+     position: relative;
+     max-width:50%;
+     width: 50%;
+     height: auto;
+     margin: 0 auto;
+     z-index: 1;
+}
+
+.pivorak:hover {cursor: pointer; }
+.innocodelogo:hover {cursor: pointer;}
+
+.hidden {     
+     padding: 10px;
+     width: 100%;
+     background-color: white;
+     margin: auto;
+}
+
+.thirdcontent {
+     flex: 1;
+     padding: 10px; 
+     background-color: grey;
+     background-size: cover;
+     max-width: 100%;
+}
+
+.thirdcontent { transition: all .2s ease-in-out; }
+.thirdcontent:hover { transform: scale(1.1); }
+
+
+/*----------------------------------------------------------footer*/
+
+.footer {
+     padding: 10px;
+     background-color: #f3f2ef;
+     margin: auto;
+}
+}

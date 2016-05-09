@@ -1,0 +1,165 @@
+@media only screen and (min-width: 669px) and (max-width: 1800px) {
+
+body {
+    background: linear-gradient(grey, white);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 1800px;
+    max-height: 900px;
+    
+}
+
+/*--------------------------------------------------------navbar*/
+
+#mobiletoggle {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    top:0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    z-index: 100;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+header a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:transparent;
+}
+
+/*----------------------------------------------------------maincontent*/
+
+.container {
+     display: flex;
+     flex-flow: column;
+     min-height: 100vh;
+     overflow: auto;
+}
+
+.firstcontent {
+     flex: 1;
+     padding: 0;
+}
+
+.firstcontent h2 { 
+   position: absolute; 
+   top: 15%; 
+   left: 10%; 
+   width: 45%; 
+font-family: 'Lato', sans-serif;
+font-size: 2em;
+z-index: 1;
+}
+
+#me {
+     content:url("../media/backgroundtop.jpg");
+     display: inline-block;
+     position: relative;
+     max-width:100%;
+     width: 100%;
+     height: auto;
+     padding-top: 2%;
+     margin: 0 auto;
+}
+
+.firstcontent h2 { transition: all .2s ease-in-out; }
+.firstcontent h2:hover { transform: scale(1.1); }
+
+.secondcontent {
+     flex: 1;
+     padding: 0; 
+     margin: 0 auto;
+     height: auto;
+     background-color: white;
+     background-size: cover;
+     max-width: 100%;
+     width: 100%;
+       list-style: none;
+  display: flex;
+  flex-flow:row;
+}
+
+.hidden h2 {
+display: inline-block;
+padding-left: 10%;
+width: 100%; 
+font-family: 'Lato', sans-serif;
+font-size: 2em;
+z-index: 1;
+    
+}
+
+
+.pivorak {
+     content:url("../media/pivorak.svg");
+     display: inline-block;
+     position: relative;
+     max-width:50%;
+     width: 50%;
+     height: auto;
+     margin: 0 auto;
+     z-index: 1;
+}
+
+.innocodelogo {
+     content:url("../media/innocodelogo.svg");
+     display: inline-block;
+     position: relative;
+     max-width:50%;
+     width: 50%;
+     height: auto;
+     margin: 0 auto;
+     z-index: 1;
+}
+
+.pivorak:hover {cursor: pointer; }
+.innocodelogo:hover {cursor: pointer;}
+
+.hidden {     
+     padding: 10px;
+     width: 100%;
+     background-color: white;
+     margin: auto;
+}
+
+.thirdcontent {
+     flex: 1;
+     padding: 10px; 
+     background-color: grey;
+     background-size: cover;
+     max-width: 100%;
+}
+
+.thirdcontent { transition: all .2s ease-in-out; }
+.thirdcontent:hover { transform: scale(1.1); }
+
+
+/*----------------------------------------------------------footer*/
+
+.footer {
+     padding: 10px;
+     background-color: #f3f2ef;
+     margin: auto;
+}
+}
